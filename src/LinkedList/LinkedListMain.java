@@ -25,13 +25,21 @@ public class LinkedListMain {
 		//LinkedList ll = func.insertLast(list[0], in.nextInt());
 		//LinkedList ll = func.insertFirst(list[0], in.nextInt());
 		//LinkedList ll = func.insertAfter(list[0], in.nextInt(), in.nextInt());
-		//func.traverseLinkedList(ll);
+	
 
-		if(func.isCircular(list[0])) {
-			System.out.println("Is a cirular Linked List");
-		} else {
-			System.out.println("Is not a cirular Linked List");
-		}
+//		if(func.isCircular(list[0])) {
+//			System.out.println("Is a cirular Linked List");
+//		} else {
+//			System.out.println("Is not a cirular Linked List");
+//		}
+		
+//		func.printReverse(list[0]);
+		
+		
+		LinkedList ll = func.reverseLinkedList(list[0]);
+		
+		func.traverseLinkedList(ll);
+	
 	}
 
 

@@ -68,5 +68,27 @@ public class LinkedListFunctions {
 		}
 		return false;
 	}
+	
+	public void printReverse(LinkedList src) {
+		if(src.next != null) {
+			printReverse(src.next);
+		}
+		System.out.print(src.data + "->");
+	}
 
+	public LinkedList reverseLinkedList(LinkedList src) {
+		LinkedList currentNode, nextNode = null, previousNode = null;
+		currentNode = src;
+		
+		while(currentNode != null) {
+			nextNode = currentNode.next;
+			currentNode.next = previousNode;
+			previousNode = currentNode;
+			currentNode = nextNode;
+		}
+		
+		
+		
+		return previousNode;
+	}
 }
